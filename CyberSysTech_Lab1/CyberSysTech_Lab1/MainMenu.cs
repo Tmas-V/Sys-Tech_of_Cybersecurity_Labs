@@ -38,6 +38,9 @@ namespace CyberSysTech_Lab1
             InitializeComponent();
             chosen_regex_num = userData._passRestrict._passRegexIndex;
             assignUserSettingsToFields(userData);
+            this.block_checkbox.Enabled = false;
+            this.pass_restrict_check.Enabled = false;
+            this.pass_rules_panel.Enabled = false;
             passwordProtectedButtons = new Button[1];
             passwordProtectedButtons[0] = this.edit_settings_button;
             isInEditMode = false;
@@ -150,15 +153,6 @@ namespace CyberSysTech_Lab1
 
                 this.login_textbox.Enabled = true;
                 this.password_textbox.Enabled = true;
-                this.block_checkbox.Enabled = true;
-                this.pass_restrict_check.Enabled = true;
-                if ((this.pass_restrict_check.Checked))
-                {
-                    this.pass_rules_panel.Show();
-                    this.pass_rules_panel.Enabled = true;
-                    this.min_pass_len_numbox.Enabled = true;
-                    change_regex_button.Enabled = true;
-                }
 
                 this.new_pass_panel.Show();
                 this.new_pass_panel.Enabled = true;
@@ -183,15 +177,6 @@ namespace CyberSysTech_Lab1
                 this.confirm_pass_textbox.Text = passFieldsFiller;
                 this.login_textbox.Enabled = false;
                 this.password_textbox.Enabled = false;
-                this.block_checkbox.Enabled = false;
-                this.pass_restrict_check.Enabled = false;
-                if ((this.pass_restrict_check.Checked))
-                {
-                    this.pass_rules_panel.Show();
-                    this.pass_rules_panel.Enabled = false;
-                    this.min_pass_len_numbox.Enabled = false;
-                    change_regex_button.Enabled = false;
-                }
 
                 this.new_pass_panel.Hide();
                 this.new_pass_panel.Enabled = false;
@@ -206,24 +191,6 @@ namespace CyberSysTech_Lab1
 
         private void pass_restrict_check_CheckedChanged(object sender, EventArgs e)
         {
-            if ((this.pass_restrict_check.Checked))
-            {
-                this.pass_rules_panel.Show();
-            }
-            else
-            {
-                this.pass_rules_panel.Hide();
-            }
-            if (isInEditMode)
-            {
-                this.pass_rules_panel.Enabled = true;
-                this.min_pass_len_numbox.Enabled = true;
-            }
-            else
-            {
-                this.pass_rules_panel.Enabled = false;
-                this.min_pass_len_numbox.Enabled = false;
-            }
         }
 
 
@@ -256,11 +223,6 @@ namespace CyberSysTech_Lab1
 
         private void change_regex_button_Click(object sender, EventArgs e)
         {
-            if (isInEditMode)
-            {
-                chosen_regex_num = (chosen_regex_num + 1) % _passwordRestriction.premadeRegexArrLen;
-                this.regex_textbox.Text = _passwordRestriction.getRegexFriendlyName(chosen_regex_num);
-            }
         }
     }
 }

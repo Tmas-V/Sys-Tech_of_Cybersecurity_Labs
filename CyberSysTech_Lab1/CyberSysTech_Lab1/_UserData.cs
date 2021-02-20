@@ -16,7 +16,7 @@ namespace CyberSysTech_Lab1
 		public static int def_min_len = 1;
 		public static int def_pass_regex_Index = 0;
 		public static int premadeRegexArrLen = 2;
-		public static string[] premadeRegex = {"", @"^[a-zA-Z0-9,.!?;:]+(?![^a-zA-Z0-9,.!?;:])$" };
+		public static string[] premadeRegex = {"", @"^(?=[a-zA-Z0-9,.!?;:]+$)(?=[^a-zA-Z]*[a-zA-Z])(?=[^0-9]*[0-9])(?=[^,.!?;:]*[,.!?;:])" };
 		public _passwordRestriction()
         {
 			_minLength = def_min_len;
@@ -37,7 +37,7 @@ namespace CyberSysTech_Lab1
 			switch (pos)
 			{
 				case 0: return "No restrictions.";
-				case 1: return "Only a-Z/0-9/.,?! allowed.";
+				case 1: return "At least 1 a-Z&0-9&.,?! required.";
 				default: return "";
             }
         }

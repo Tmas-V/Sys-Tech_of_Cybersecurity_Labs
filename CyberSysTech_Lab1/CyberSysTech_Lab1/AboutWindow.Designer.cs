@@ -64,8 +64,7 @@ namespace CyberSysTech_Lab1
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(281, 31);
             this.label1.TabIndex = 14;
-            this.label1.Text = "Variant-specific restriction for passwords: Only letters,numbers and punctual sig" +
-    "ns are allowed.";
+            this.label1.Text = "At least 1 letter and digit and punctual sign are required.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // AboutWindow
