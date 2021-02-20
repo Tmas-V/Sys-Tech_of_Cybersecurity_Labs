@@ -1,0 +1,16 @@
+C:\Users\Valera\source\repos\CyberSysTech_Lab1\CyberSysTech_Lab1\bin\Debug\CyberSysTech_Lab1.exe.config
+C:\Users\Valera\source\repos\CyberSysTech_Lab1\CyberSysTech_Lab1\bin\Debug\CyberSysTech_Lab1.exe
+C:\Users\Valera\source\repos\CyberSysTech_Lab1\CyberSysTech_Lab1\bin\Debug\CyberSysTech_Lab1.pdb
+C:\Users\Valera\source\repos\CyberSysTech_Lab1\CyberSysTech_Lab1\obj\Debug\CyberSysTech_Lab1.csprojAssemblyReference.cache
+C:\Users\Valera\source\repos\CyberSysTech_Lab1\CyberSysTech_Lab1\obj\Debug\CyberSysTech_Lab1.LoginErrorDialog.resources
+C:\Users\Valera\source\repos\CyberSysTech_Lab1\CyberSysTech_Lab1\obj\Debug\CyberSysTech_Lab1.LoginForm.resources
+C:\Users\Valera\source\repos\CyberSysTech_Lab1\CyberSysTech_Lab1\obj\Debug\CyberSysTech_Lab1.Properties.Resources.resources
+C:\Users\Valera\source\repos\CyberSysTech_Lab1\CyberSysTech_Lab1\obj\Debug\CyberSysTech_Lab1.csproj.GenerateResource.cache
+C:\Users\Valera\source\repos\CyberSysTech_Lab1\CyberSysTech_Lab1\obj\Debug\CyberSysTech_Lab1.csproj.CoreCompileInputs.cache
+C:\Users\Valera\source\repos\CyberSysTech_Lab1\CyberSysTech_Lab1\obj\Debug\CyberSysTech_Lab1.exe
+C:\Users\Valera\source\repos\CyberSysTech_Lab1\CyberSysTech_Lab1\obj\Debug\CyberSysTech_Lab1.pdb
+C:\Users\Valera\source\repos\CyberSysTech_Lab1\CyberSysTech_Lab1\obj\Debug\CyberSysTech_Lab1.MainMenu.resources
+C:\Users\Valera\source\repos\CyberSysTech_Lab1\CyberSysTech_Lab1\obj\Debug\CyberSysTech_Lab1.TypeInPasswordDialog.resources
+C:\Users\Valera\source\repos\CyberSysTech_Lab1\CyberSysTech_Lab1\obj\Debug\CyberSysTech_Lab1.AboutWindow.resources
+C:\Users\Valera\source\repos\CyberSysTech_Lab1\CyberSysTech_Lab1\obj\Debug\CyberSysTech_Lab1.MainMenuAdmin.resources
+C:\Users\Valera\source\repos\CyberSysTech_Lab1\CyberSysTech_Lab1\obj\Debug\CyberSysTech_Lab1.EditUserWindow.resources
