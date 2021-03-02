@@ -144,7 +144,7 @@ namespace CyberSysTech_Lab1
             if (userData == null) return;
             string[] userDataFields = new string[1];
             userDataFields[0] = userDataToString(ref userData);
-            _usersList.Append<_UserData>(new _UserData(ref userData));
+            _usersList.Add(new _UserData(ref userData));
             File.AppendAllLines(_saveFileName, userDataFields);
             nextUserID = calculateNextUserID();
         }
