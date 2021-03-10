@@ -1,0 +1,14 @@
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\InstallerLibrary\bin\Debug\InstallerLibrary.exe.config
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\InstallerLibrary\bin\Debug\InstallerLibrary.exe
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\InstallerLibrary\bin\Debug\InstallerLibrary.pdb
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\InstallerLibrary\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\InstallerLibrary\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\InstallerLibrary\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\InstallerLibrary\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\InstallerLibrary\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\InstallerLibrary\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\InstallerLibrary\obj\Debug\InstallerLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\InstallerLibrary\obj\Debug\InstallerLibrary.csproj.CopyComplete
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\InstallerLibrary\obj\Debug\InstallerLibrary.exe
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\InstallerLibrary\obj\Debug\InstallerLibrary.pdb
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\InstallerLibrary\obj\Debug\InstallerLibrary.csprojAssemblyReference.cache

@@ -30,3 +30,14 @@ C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\Cy
 C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\CyberSysTech_Lab1\obj\Release\CyberSysTech_Lab1.csproj.CoreCompileInputs.cache
 C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\CyberSysTech_Lab1\obj\Release\CyberSysTech_Lab1.exe
 C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\CyberSysTech_Lab1\obj\Release\CyberSysTech_Lab1.pdb
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\CyberSysTech_Lab1\obj\Release\CyberSysTech_Lab1.OnStartUpErrorForm.resources
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\CyberSysTech_Lab1\obj\Release\CyberSysTech_Lab1.csproj.CopyComplete
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\CyberSysTech_Lab1\bin\Release\InstallerLibrary.exe
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\CyberSysTech_Lab1\bin\Release\Newtonsoft.Json.dll
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\CyberSysTech_Lab1\bin\Release\System.Diagnostics.EventLog.dll
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\CyberSysTech_Lab1\bin\Release\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\CyberSysTech_Lab1\bin\Release\InstallerLibrary.pdb
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\CyberSysTech_Lab1\bin\Release\InstallerLibrary.exe.config
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\CyberSysTech_Lab1\bin\Release\Newtonsoft.Json.xml
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\CyberSysTech_Lab1\bin\Release\System.Diagnostics.EventLog.xml
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\CyberSysTech_Lab1\bin\Release\System.Diagnostics.PerformanceCounter.xml

@@ -1,9 +1,0 @@
-C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\InstallerClassesLibrary\bin\Release\netstandard2.0\InstallerClassesLibrary.deps.json
-C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\InstallerClassesLibrary\bin\Release\netstandard2.0\InstallerClassesLibrary.dll
-C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\InstallerClassesLibrary\bin\Release\netstandard2.0\InstallerClassesLibrary.pdb
-C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\InstallerClassesLibrary\obj\Release\netstandard2.0\InstallerClassesLibrary.csprojAssemblyReference.cache
-C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\InstallerClassesLibrary\obj\Release\netstandard2.0\InstallerClassesLibrary.AssemblyInfoInputs.cache
-C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\InstallerClassesLibrary\obj\Release\netstandard2.0\InstallerClassesLibrary.AssemblyInfo.cs
-C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\InstallerClassesLibrary\obj\Release\netstandard2.0\InstallerClassesLibrary.csproj.CoreCompileInputs.cache
-C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\InstallerClassesLibrary\obj\Release\netstandard2.0\InstallerClassesLibrary.dll
-C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\InstallerClassesLibrary\obj\Release\netstandard2.0\InstallerClassesLibrary.pdb
