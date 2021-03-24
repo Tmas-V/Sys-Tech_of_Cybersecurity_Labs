@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyberSysTech_Lab1", "CyberS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstallerLibrary", "InstallerLibrary\InstallerLibrary.csproj", "{7A5B90AE-25CD-4241-A9F0-ED6E0B01201A}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{B5CF7D51-F83C-49CC-9844-22AF1ECA90D9}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{308AE0DA-21FF-48ED-8C73-67B87DE8424B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,9 +28,12 @@ Global
 		{7A5B90AE-25CD-4241-A9F0-ED6E0B01201A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A5B90AE-25CD-4241-A9F0-ED6E0B01201A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A5B90AE-25CD-4241-A9F0-ED6E0B01201A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B5CF7D51-F83C-49CC-9844-22AF1ECA90D9}.All|Any CPU.ActiveCfg = Debug
-		{B5CF7D51-F83C-49CC-9844-22AF1ECA90D9}.Debug|Any CPU.ActiveCfg = Debug
-		{B5CF7D51-F83C-49CC-9844-22AF1ECA90D9}.Release|Any CPU.ActiveCfg = Release
+		{308AE0DA-21FF-48ED-8C73-67B87DE8424B}.All|Any CPU.ActiveCfg = Debug
+		{308AE0DA-21FF-48ED-8C73-67B87DE8424B}.All|Any CPU.Build.0 = Debug
+		{308AE0DA-21FF-48ED-8C73-67B87DE8424B}.Debug|Any CPU.ActiveCfg = Debug
+		{308AE0DA-21FF-48ED-8C73-67B87DE8424B}.Debug|Any CPU.Build.0 = Debug
+		{308AE0DA-21FF-48ED-8C73-67B87DE8424B}.Release|Any CPU.ActiveCfg = Release
+		{308AE0DA-21FF-48ED-8C73-67B87DE8424B}.Release|Any CPU.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

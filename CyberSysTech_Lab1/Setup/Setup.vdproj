@@ -21,12 +21,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_74CB42A817C549E5BC27F1A6F12CDDB9"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_7890979955ED87F60A121C6EC647CEE9"
         "OwnerKey" = "8:_2B7287CC92E44EE79D467831CD98454F"
         "MsmSig" = "8:_UNDEFINED"
@@ -34,7 +28,7 @@
         "Entry"
         {
         "MsmKey" = "8:_7AF5E51E54229CA8A002EECD670EFE8E"
-        "OwnerKey" = "8:_74CB42A817C549E5BC27F1A6F12CDDB9"
+        "OwnerKey" = "8:_FF941012B11B44B38089F8B4DF8401A0"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -45,7 +39,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_932B2608C4B4B7A7674E535A885E9AA8"
+        "MsmKey" = "8:_B727D6D3A701497F866651933E5FC630"
         "OwnerKey" = "8:_2B7287CC92E44EE79D467831CD98454F"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -58,7 +52,7 @@
         "Entry"
         {
         "MsmKey" = "8:_D6C0E9DD09B02D212B0AAA88FCAB1523"
-        "OwnerKey" = "8:_74CB42A817C549E5BC27F1A6F12CDDB9"
+        "OwnerKey" = "8:_FF941012B11B44B38089F8B4DF8401A0"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -70,13 +64,25 @@
         "Entry"
         {
         "MsmKey" = "8:_DC3E2C0E0623CDB05A91079DC6DDC5E9"
-        "OwnerKey" = "8:_74CB42A817C549E5BC27F1A6F12CDDB9"
+        "OwnerKey" = "8:_FF941012B11B44B38089F8B4DF8401A0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FF941012B11B44B38089F8B4DF8401A0"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_74CB42A817C549E5BC27F1A6F12CDDB9"
+        "OwnerKey" = "8:_B727D6D3A701497F866651933E5FC630"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_FF941012B11B44B38089F8B4DF8401A0"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -119,12 +125,6 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_DBAB93F525B83721B115643AFB78D0B2"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_932B2608C4B4B7A7674E535A885E9AA8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -190,6 +190,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -197,20 +205,19 @@
     {
         "CustomAction"
         {
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_E1CB0A76BBAA404FA0462C6FC2573902"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_4BA8A81156C74DAF85D17466CFAA06C6"
             {
             "Name" = "8:Primary output from InstallerLibrary (Active)"
             "Condition" = "8:"
-            "Object" = "8:_74CB42A817C549E5BC27F1A6F12CDDB9"
+            "Object" = "8:_FF941012B11B44B38089F8B4DF8401A0"
             "FileType" = "3:2"
             "InstallAction" = "3:1"
             "Arguments" = "8:"
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
-            "Identifier" = "8:_4F18E411_86B2_4188_92B9_916571FE0EB4"
+            "Identifier" = "8:_399EFE4A_F16C_480C_9D06_61C36900B24E"
             "InstallerClass" = "11:TRUE"
             "CustomActionData" = "8:"
-            "Run64Bit" = "11:TRUE"
             }
         }
         "DefaultFeature"
@@ -328,14 +335,14 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_932B2608C4B4B7A7674E535A885E9AA8"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_B727D6D3A701497F866651933E5FC630"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:InstallerLibrary, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_932B2608C4B4B7A7674E535A885E9AA8"
+                    "_B727D6D3A701497F866651933E5FC630"
                     {
                     "Name" = "8:InstallerLibrary.exe"
                     "Attributes" = "3:512"
@@ -355,7 +362,7 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
-            "Exclude" = "11:FALSE"
+            "Exclude" = "11:TRUE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -540,7 +547,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Setup"
         "ProductCode" = "8:{182F083E-87FB-4018-A1F6-F26C46A67B96}"
-        "PackageCode" = "8:{21CF92C6-6B34-4045-95D2-FC5251EA5239}"
+        "PackageCode" = "8:{0EC11817-B6C4-495E-8318-821A2283B1A8}"
         "UpgradeCode" = "8:{BAF01E8F-BB8E-4684-9932-5B7068177002}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -1047,7 +1054,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_2B7287CC92E44EE79D467831CD98454F"
             {
-            "SourcePath" = "8:..\\CyberSysTech_Lab1\\obj\\Debug\\CyberSysTech_Lab1.exe"
+            "SourcePath" = "8:..\\CyberSysTech_Lab1\\obj\\Release\\CyberSysTech_Lab1.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_472EE8A181D24BA69216B4E7A40EE84C"
@@ -1073,9 +1080,9 @@
                 {
                 }
             }
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_74CB42A817C549E5BC27F1A6F12CDDB9"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_FF941012B11B44B38089F8B4DF8401A0"
             {
-            "SourcePath" = "8:..\\InstallerLibrary\\obj\\Debug\\InstallerLibrary.exe"
+            "SourcePath" = "8:..\\InstallerLibrary\\obj\\Release\\InstallerLibrary.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_472EE8A181D24BA69216B4E7A40EE84C"

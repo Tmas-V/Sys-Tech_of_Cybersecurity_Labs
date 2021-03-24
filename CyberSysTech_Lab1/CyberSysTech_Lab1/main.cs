@@ -22,11 +22,10 @@ namespace CyberSysTech_Lab1
             }
             else
             {
-                _UserAccountsManager _userAccManager = _UserAccountsManager.getInstance();
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                LoginForm loginForm = new LoginForm();
-                loginForm.Show();
+                PassphraseDecryptForm passDecryptForm = new PassphraseDecryptForm();
+                passDecryptForm.Show();
             }
             Application.Run();
         }

@@ -90,15 +90,15 @@ namespace InstallerLibrary
         }
         public void setRegKey()
         {
-            RegistryKey key = Registry.CurrentUser.OpenSubKey("Software", true);
-            key.CreateSubKey("Gakh");
-            key = key.OpenSubKey("Gakh", true);
-            key.SetValue("Signature", sign(assembleInfoString()), RegistryValueKind.Binary);
+            RegistryKey key = Registry.CurrentUser.OpenSubKey("Software",RegistryKeyPermissionCheck.ReadWriteSubTree);
+            key.CreateSubKey("Gakh", RegistryKeyPermissionCheck.ReadWriteSubTree);
+            key = key.OpenSubKey("Gakh", RegistryKeyPermissionCheck.ReadWriteSubTree);
+            key.SetValue("Signature", sign(assembleInfoString()));
         }
         public byte[] getRegKey()
         {
-            RegistryKey key = Registry.CurrentUser.OpenSubKey("Software", false);
-            key = key.OpenSubKey("Gakh", false);
+            RegistryKey key = Registry.CurrentUser.OpenSubKey("Software", RegistryKeyPermissionCheck.ReadWriteSubTree);
+            key = key.OpenSubKey("Gakh", RegistryKeyPermissionCheck.ReadWriteSubTree);
             if (key == null) return null;
             return (byte[])key.GetValue("Signature", null);
         }

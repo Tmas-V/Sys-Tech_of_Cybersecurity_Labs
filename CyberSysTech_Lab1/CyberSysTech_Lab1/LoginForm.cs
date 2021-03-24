@@ -60,6 +60,8 @@ namespace CyberSysTech_Lab1
 
         private void exit_button_Click(object sender, EventArgs e)
         {
+            _UserAccountsManager uAM = _UserAccountsManager.getInstance();
+            uAM.endSession();
             Application.Exit();
         }
 

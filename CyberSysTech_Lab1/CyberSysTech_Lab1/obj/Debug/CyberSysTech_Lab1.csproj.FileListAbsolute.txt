@@ -41,3 +41,6 @@ C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\Cy
 C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\CyberSysTech_Lab1\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\CyberSysTech_Lab1\bin\Debug\System.Diagnostics.EventLog.xml
 C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\CyberSysTech_Lab1\bin\Debug\System.Diagnostics.PerformanceCounter.xml
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\CyberSysTech_Lab1\obj\Debug\CyberSysTech_Lab1.PassphraseEncryptForm.resources
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\CyberSysTech_Lab1\obj\Debug\CyberSysTech_Lab1.PassphraseDecryptForm.resources
+C:\Users\Valera\source\repos\Sys-Tech_of_Cybersecurity_Labs\CyberSysTech_Lab1\CyberSysTech_Lab1\bin\Debug\Mono.Security.dll

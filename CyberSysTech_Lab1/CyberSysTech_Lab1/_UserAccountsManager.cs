@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 
 
@@ -14,12 +11,16 @@ namespace CyberSysTech_Lab1
         private List<_UserData> _usersList;
         private static _UserAccountsManager _userAccManager = null;
         private static string _saveFileName = "passwd.txt";
+        private static string _TMPsaveFileName = "tmp.txt";
         private static string delimiter = "::";
         public static string adminID = "0000";
         private string nextUserID = "0000";
         public static string lastUserID = "9999";
         public static int maxUserCount = 7;
-
+        private static string defaultDecryptPass = "lab3-gakh";
+        private static string passphraseDecrypt = "";
+        private static string passphraseEncrypt = "";
+        private static int randomValueRange = 999999999;
         private _UserAccountsManager()
         {
             _usersList = null;
@@ -36,19 +37,71 @@ namespace CyberSysTech_Lab1
             }
             return _usersList[pos];
         }
-        private void initializeUsersList()
+        private void createPasswdFile()
         {
-            string adminUserData = "ADMIN::0000::e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855::0::1::1::0";
-            _usersList = new List<_UserData>();
-			if (!File.Exists(_saveFileName))
+            if (!File.Exists(_saveFileName))
             {
-				string[] defaultUserCred = new string[1];
-				defaultUserCred[0] = adminUserData;
-				File.WriteAllLines(_saveFileName, defaultUserCred);
+                string adminUserData = "ADMIN::0000::e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855::0::1::1::0";
+                
+                CryptoAPI_class crypto = CryptoAPI_class.Instance();
+                Random rand = new Random();
+                string salt = rand.Next(randomValueRange).ToString();
+                string[] lines = new string[2];
+                lines[0] = salt;
+                lines[1] = crypto.go_encryption(adminUserData, defaultDecryptPass + salt);
+                File.WriteAllLines(_saveFileName, lines);
             }
-
+        }
+        private bool checkStringsFormat(string[] fileContent)
+        {
+            if (fileContent == null) return false;
+            for (int i = 0; i < fileContent.Length; i++)
+            {
+                string[] userDataFields = fileContent[i].Split(delimiter.ToCharArray());
+                if (userDataFields.Length != 13) return false;
+            }
+            return true;
+        }
+        private bool checkFileContents()
+        {
+            if (!File.Exists(_saveFileName))
+            {
+                return false;
+            }
+            string[] usersDataLines = File.ReadAllLines(_saveFileName);
+            return checkStringsFormat(usersDataLines);
+        }
+        public bool checkDecryptPhrase(string decryptpass)
+        {
+            if (!File.Exists(_saveFileName))
+            {
+                return false;
+            }
+            CryptoAPI_class crypto = CryptoAPI_class.Instance();
+            string[] lines = File.ReadAllLines(_saveFileName);
+            if (lines.Length != 2) return false;
+            string decrypted = crypto.go_decryption(lines[1], decryptpass + lines[0]);
+            if (decrypted == null) return false;
+            lines = decrypted.Split(Environment.NewLine.ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+            return checkStringsFormat(lines);
+        }
+        public void setDecryptPass(string decryptpass)
+        {
+            passphraseDecrypt = decryptpass;
+        }
+        public void setEncryptPass(string encryptpass)
+        {
+            passphraseEncrypt = encryptpass;
+        }
+        public void initializeUsersList()
+        {
+            if (_usersList != null) return;
+            _usersList = new List<_UserData>();
 			string[] usersDataLines;
-			usersDataLines = File.ReadAllLines(_saveFileName);
+            CryptoAPI_class crypto = CryptoAPI_class.Instance();
+            string[] lines = File.ReadAllLines(_saveFileName);
+            string decrypted = crypto.go_decryption(lines[1], passphraseDecrypt + lines[0]);
+            usersDataLines = decrypted.Split(Environment.NewLine.ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
             for (int i = 0; i < usersDataLines.Length; i++)
             {
                 string[] userDataFields = usersDataLines[i].Split(delimiter.ToCharArray());
@@ -60,6 +113,22 @@ namespace CyberSysTech_Lab1
                 }
             }
             nextUserID = calculateNextUserID();
+            File.WriteAllLines(_TMPsaveFileName, usersDataLines);
+        }
+        public void endSession()
+        {
+            if (!File.Exists(_TMPsaveFileName))
+            {
+                return;
+            }
+            CryptoAPI_class crypto = CryptoAPI_class.Instance();
+            Random rand = new Random();
+            string salt = rand.Next(randomValueRange).ToString();
+            string[] lines = new string[2];
+            lines[0] = salt;
+            lines[1] = crypto.go_encryption(File.ReadAllText(_TMPsaveFileName), passphraseEncrypt + lines[0]);
+            File.WriteAllLines(_saveFileName, lines);
+            File.Delete(_TMPsaveFileName);
         }
         public static _UserAccountsManager getInstance()
         {
@@ -67,9 +136,9 @@ namespace CyberSysTech_Lab1
             {
                 _userAccManager = new _UserAccountsManager();
             }
-            if (_userAccManager._usersList == null)
+            if (!File.Exists(_saveFileName))
             {
-                _userAccManager.initializeUsersList();
+                _userAccManager.createPasswdFile();
             }
             
             return _userAccManager;
@@ -119,7 +188,7 @@ namespace CyberSysTech_Lab1
         {
             if (userData == null) return;
             string[] usersDataLines;
-            usersDataLines = File.ReadAllLines(_saveFileName);
+            usersDataLines = File.ReadAllLines(_TMPsaveFileName);
             foreach(_UserData iter in _usersList)
             {
                 if (iter._ID.Equals(userData._ID))
@@ -134,7 +203,7 @@ namespace CyberSysTech_Lab1
                 if (userDataFields[2].Equals(userData._ID))
                 {
                     usersDataLines[i] = userDataToString(ref userData);
-                    File.WriteAllLines(_saveFileName, usersDataLines);
+                    File.WriteAllLines(_TMPsaveFileName, usersDataLines);
                     return;
                 }
             }
@@ -145,7 +214,7 @@ namespace CyberSysTech_Lab1
             string[] userDataFields = new string[1];
             userDataFields[0] = userDataToString(ref userData);
             _usersList.Add(new _UserData(ref userData));
-            File.AppendAllLines(_saveFileName, userDataFields);
+            File.AppendAllLines(_TMPsaveFileName, userDataFields);
             nextUserID = calculateNextUserID();
         }
 
@@ -160,7 +229,7 @@ namespace CyberSysTech_Lab1
                     break;
                 }
             }
-            string[] usersDataLines = File.ReadAllLines(_saveFileName);
+            string[] usersDataLines = File.ReadAllLines(_TMPsaveFileName);
             string[] newUserDataLines = new string[usersDataLines.Length - 1];
             int offset = 0;
             for (int i = 0; i < usersDataLines.Length; i++)
@@ -175,7 +244,7 @@ namespace CyberSysTech_Lab1
                     offset = 1;
                 }
             }
-            File.WriteAllLines(_saveFileName, newUserDataLines);
+            File.WriteAllLines(_TMPsaveFileName, newUserDataLines);
         }
     }
 }
